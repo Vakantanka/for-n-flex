@@ -31,7 +31,18 @@ div.card {
 	background-color: rgba(0, 82, 206, 0.1);
 	box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.5);
 
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
 }
+
+@keyframes cardAnim {
+	0% {transform: scale(1.15);}
+	40% {transform: scale(1); }
+	50% {transform: scale(1.1); }
+	60% {transform: scale(1); }
+	100% {transform: scale(0.9); }
+}  
 
 div.card:hover {
 	color: #fff;
@@ -40,5 +51,9 @@ div.card:hover {
 	background-color: rgba(0, 82, 206, 1);
 	box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.5);
 	cursor: pointer;
-	transform: scale(1.2);
+	transform: scale(1.15);
+	animation-name: cardAnim;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
 }
