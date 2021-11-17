@@ -1,0 +1,44 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;	
+}
+
+#root {
+	display: flex;
+	flex-wrap: wrap;
+
+	height: 100vh;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+div.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 160px;
+	height: 190px;
+	margin: 30px;
+
+	font-size: 48px;
+	font-weight: 800;	
+	color: rgb(0, 82, 206);
+
+	border: 2px solid rgb(0, 82, 206);
+	border-radius: 6px;
+	background-color: rgba(0, 82, 206, 0.1);
+	box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.5);
+
+}
+
+div.card:hover {
+	color: #fff;
+	border: 2px solid rgba(0, 82, 206, 0.1);
+	border-radius: 6px;
+	background-color: rgba(0, 82, 206, 1);
+	box-shadow: 10px 10px 14px -4px rgba(0,0,0,0.5);
+	cursor: pointer;
+	transform: scale(1.2);
+}
